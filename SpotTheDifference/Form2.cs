@@ -14,20 +14,31 @@ namespace SpotTheDifference
 {
     public partial class Form2 : Form
     {
+        Bitmap bmpImg;
         private Timer timer;
-        public Form2()
+        private Form1 mainForm = null;
+        ImagePair pair = null;
+
+        public Form2() {
+            InitializeComponent();
+        }
+
+        public Form2(Form callingForm)
         {
+            mainForm = callingForm as Form1; 
             InitializeComponent();
             timer = new Timer();
             timer.Interval = 50;
             timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
+            pair = new ImagePair();
+            ShowImages();
         }
     
 
         private void Form2_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.Clear(Color.Black);
+            e.Graphics.Clear(Color.GreenYellow);
         }
 
         private void pbLeft_MouseEnter(object sender, EventArgs e)
@@ -41,6 +52,7 @@ namespace SpotTheDifference
             pos.X=(e.X+525);
             pos.Y=e.Y+15;
             pbCursor.Location = pos;
+            lblPosition.Text = e.X.ToString() + " X " + e.Y.ToString();
         }
 
         private void pbLeft_MouseLeave(object sender, EventArgs e)
@@ -62,16 +74,17 @@ namespace SpotTheDifference
         private void pbRight_MouseLeave(object sender, EventArgs e)
         {
             pbCursor.Hide();
+            
         }
 
         private void pbCursor_LoadCompleted(object sender, AsyncCompletedEventArgs e)
         {
-            TransparencyKey = BackColor;
+            TransparencyKey = BackColor;        
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Sure you want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes) Application.Exit();
         }
 
@@ -80,7 +93,15 @@ namespace SpotTheDifference
             Invalidate();
         }
 
+        public void ShowImages(){
+            SuspendLayout();
+            pair = this.mainForm.category.getNewPair();
+            pbLeft.Image = pair.left;
+            pbRight.Image = pair.right;            
+        }
 
-     
+
+
+
     }
 }

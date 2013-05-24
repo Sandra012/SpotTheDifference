@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@
             this.pbCursor = new System.Windows.Forms.PictureBox();
             this.pbRight = new System.Windows.Forms.PictureBox();
             this.pbLeft = new System.Windows.Forms.PictureBox();
+            this.lblPosition = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbCursor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLeft)).BeginInit();
@@ -85,8 +87,9 @@
             // pbCursor
             // 
             this.pbCursor.BackColor = System.Drawing.Color.Transparent;
-            this.pbCursor.Image = global::SpotTheDifference.Properties.Resources.cursor;
-            this.pbCursor.Location = new System.Drawing.Point(564, 49);
+            this.pbCursor.Image = ((System.Drawing.Image)(resources.GetObject("pbCursor.Image")));
+            this.pbCursor.InitialImage = null;
+            this.pbCursor.Location = new System.Drawing.Point(784, 124);
             this.pbCursor.Name = "pbCursor";
             this.pbCursor.Size = new System.Drawing.Size(20, 24);
             this.pbCursor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -97,9 +100,9 @@
             // 
             // pbRight
             // 
+            this.pbRight.BackColor = System.Drawing.Color.Transparent;
             this.pbRight.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbRight.Image = global::SpotTheDifference.Properties.Resources.animals_1_2;
-            this.pbRight.Location = new System.Drawing.Point(534, 19);
+            this.pbRight.Location = new System.Drawing.Point(547, 19);
             this.pbRight.Name = "pbRight";
             this.pbRight.Size = new System.Drawing.Size(500, 500);
             this.pbRight.TabIndex = 1;
@@ -111,21 +114,32 @@
             // pbLeft
             // 
             this.pbLeft.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbLeft.Image = global::SpotTheDifference.Properties.Resources.animals_1_1;
             this.pbLeft.Location = new System.Drawing.Point(32, 19);
             this.pbLeft.Name = "pbLeft";
             this.pbLeft.Size = new System.Drawing.Size(500, 500);
             this.pbLeft.TabIndex = 0;
             this.pbLeft.TabStop = false;
+ //           this.pbLeft.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pbLeft_MouseClick);
             this.pbLeft.MouseEnter += new System.EventHandler(this.pbLeft_MouseEnter);
             this.pbLeft.MouseLeave += new System.EventHandler(this.pbLeft_MouseLeave);
             this.pbLeft.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pbLeft_MouseMove);
+            // 
+            // lblPosition
+            // 
+            this.lblPosition.AutoSize = true;
+            this.lblPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPosition.Location = new System.Drawing.Point(646, 547);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(41, 13);
+            this.lblPosition.TabIndex = 6;
+            this.lblPosition.Text = "label3";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1075, 607);
+            this.Controls.Add(this.lblPosition);
             this.Controls.Add(this.pbCursor);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -133,7 +147,7 @@
             this.Controls.Add(this.pbRight);
             this.Controls.Add(this.pbLeft);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Spot the difference";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form2_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pbCursor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRight)).EndInit();
@@ -152,5 +166,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pbCursor;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblPosition;
     }
 }

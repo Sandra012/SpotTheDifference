@@ -67,42 +67,45 @@
             // 
             // pbNature
             // 
-            this.pbNature.Image = global::SpotTheDifference.Properties.Resources._306798_394655463983179_1204996598_n;
+            this.pbNature.Image = global::SpotTheDifference.Properties.Resources.pesok;
             this.pbNature.Location = new System.Drawing.Point(106, 194);
             this.pbNature.Name = "pbNature";
-            this.pbNature.Size = new System.Drawing.Size(110, 108);
+            this.pbNature.Size = new System.Drawing.Size(110, 110);
             this.pbNature.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbNature.TabIndex = 3;
             this.pbNature.TabStop = false;
+            this.pbNature.Click += new System.EventHandler(this.pbNature_Click);
             // 
             // pbSkopje
             // 
-            this.pbSkopje.Image = global::SpotTheDifference.Properties.Resources._14;
+            this.pbSkopje.Image = global::SpotTheDifference.Properties.Resources.kej;
             this.pbSkopje.Location = new System.Drawing.Point(222, 194);
             this.pbSkopje.Name = "pbSkopje";
-            this.pbSkopje.Size = new System.Drawing.Size(110, 108);
+            this.pbSkopje.Size = new System.Drawing.Size(110, 110);
             this.pbSkopje.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbSkopje.TabIndex = 2;
             this.pbSkopje.TabStop = false;
+            this.pbSkopje.Click += new System.EventHandler(this.pbSkopje_Click);
             // 
             // pbFinki
             // 
-            this.pbFinki.Image = global::SpotTheDifference.Properties.Resources.finki_logo1;
+            this.pbFinki.Image = global::SpotTheDifference.Properties.Resources.finki;
             this.pbFinki.Location = new System.Drawing.Point(222, 80);
             this.pbFinki.Name = "pbFinki";
-            this.pbFinki.Size = new System.Drawing.Size(110, 108);
+            this.pbFinki.Size = new System.Drawing.Size(110, 110);
             this.pbFinki.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFinki.TabIndex = 1;
             this.pbFinki.TabStop = false;
+            this.pbFinki.Click += new System.EventHandler(this.pbFinki_Click);
             // 
             // pbAnimals
             // 
             this.pbAnimals.Image = global::SpotTheDifference.Properties.Resources.std10;
-            this.pbAnimals.Location = new System.Drawing.Point(106, 80);
+            this.pbAnimals.Location = new System.Drawing.Point(106, 78);
             this.pbAnimals.Name = "pbAnimals";
-            this.pbAnimals.Size = new System.Drawing.Size(110, 108);
+            this.pbAnimals.Size = new System.Drawing.Size(110, 110);
             this.pbAnimals.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbAnimals.TabIndex = 0;
+            this.pbAnimals.TabIndex = 6;
             this.pbAnimals.TabStop = false;
             this.pbAnimals.Click += new System.EventHandler(this.pbAnimals_Click);
             // 
@@ -111,12 +114,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(450, 378);
+            this.Controls.Add(this.pbAnimals);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lbChoose);
             this.Controls.Add(this.pbNature);
             this.Controls.Add(this.pbSkopje);
             this.Controls.Add(this.pbFinki);
-            this.Controls.Add(this.pbAnimals);
             this.Name = "Form1";
             this.Text = "Spot the difference";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
@@ -131,12 +134,12 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pbAnimals;
         private System.Windows.Forms.PictureBox pbFinki;
         private System.Windows.Forms.PictureBox pbSkopje;
         private System.Windows.Forms.PictureBox pbNature;
         private System.Windows.Forms.Label lbChoose;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.PictureBox pbAnimals;
     }
 }
 
