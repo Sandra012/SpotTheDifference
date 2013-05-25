@@ -15,7 +15,7 @@ namespace SpotTheDifference
             this.Name = name;
             lastRandom = -1;
         }
-
+        
         public ImagePair getNewPair() {
             Random random = new Random();
             int num;

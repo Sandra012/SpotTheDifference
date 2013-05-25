@@ -233,6 +233,26 @@ namespace SpotTheDifference.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bomb2 {
+            get {
+                object obj = ResourceManager.GetObject("bomb2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bomb2_2 {
+            get {
+                object obj = ResourceManager.GetObject("bomb2-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cursor {
             get {
                 object obj = ResourceManager.GetObject("cursor", resourceCulture);
@@ -756,6 +776,36 @@ namespace SpotTheDifference.Properties {
         internal static System.Drawing.Bitmap skopje_5_2 {
             get {
                 object obj = ResourceManager.GetObject("skopje_5_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap spark_trans {
+            get {
+                object obj = ResourceManager.GetObject("spark_trans", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap spark_trans2 {
+            get {
+                object obj = ResourceManager.GetObject("spark_trans2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap spark_trans21 {
+            get {
+                object obj = ResourceManager.GetObject("spark_trans21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

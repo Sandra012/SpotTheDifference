@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Ball.cs" />
     <Compile Include="Category.cs" />
+    <Compile Include="CustomCursor.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +60,7 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="ImagePair.cs" />
+    <Compile Include="Line.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -308,6 +310,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\skopje_5_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cursor2.cur" />
+    <None Include="Resources\spark_trans21.gif" />
+    <None Include="Resources\bomb2-2.gif" />
+    <None Include="Resources\spark_trans2.gif" />
+    <None Include="Resources\spark_trans.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

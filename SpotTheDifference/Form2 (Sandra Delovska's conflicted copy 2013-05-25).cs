@@ -17,8 +17,13 @@ namespace SpotTheDifference
         private Timer timer;
         private Form1 mainForm = null;
         ImagePair pair = null;
+      
+
         private Line line = new Line(390, 555, new Point(580, 555), 2);
         
+        
+
+
         private void Form2_Load(object sender, EventArgs e)
         {
             this.SetStyle(ControlStyles.UserPaint, true);
@@ -38,27 +43,71 @@ namespace SpotTheDifference
             mainForm = callingForm as Form1; 
             InitializeComponent();
             timer = new Timer();
-            timer.Interval = 250 ;
+            timer.Interval = 200 ;
             timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
             pair = new ImagePair();
             ShowImages();
         }
+    
 
         private void Form2_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.Clear(Color.DarkCyan);     
+            e.Graphics.Clear(Color.DarkCyan);
+         
             line.Draw(e.Graphics);
+        }
+
+        private void pbLeft_MouseEnter(object sender, EventArgs e)
+        {
+            pbCursor.Show();
+        }
+
+        private void pbLeft_MouseMove(object sender, MouseEventArgs e)
+        {
+            Point pos=new Point();
+            pos.X=(e.X+525);
+            pos.Y=e.Y+15;
+            pbCursor.Location = pos;          
+           // lblPosition.Text = e.X.ToString() + " X " + e.Y.ToString();
+        }
+
+        private void pbLeft_MouseLeave(object sender, EventArgs e)
+        {
+            pbCursor.Hide();
+
+        }
+
+        private void pbRight_MouseEnter(object sender, EventArgs e)
+        {
+            pbCursor.Show();
+        }
+
+        private void pbRight_MouseMove(object sender, MouseEventArgs e)
+        {
+            
+            pbCursor.Location = new Point(e.X+25, e.Y + 15) ;
+        }
+
+        private void pbRight_MouseLeave(object sender, EventArgs e)
+        {
+            pbCursor.Hide();
+        }
+
+        private void pbCursor_LoadCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+            TransparencyKey = BackColor;        
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             timer.Stop();
-            
+            timer.Dispose();
             DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes) Application.Exit();
-            else if (result == DialogResult.No) { timer.Start(); }
         }
+
+
 
         public void ShowImages(){
             SuspendLayout();
@@ -124,20 +173,20 @@ namespace SpotTheDifference
             timer.Dispose();
             foreach (Point p in pair.points)
                 ShowDifference(p);
+
         }
 
         private void btnNextImg_Click(object sender, EventArgs e)
         {
             timer.Start();
             
-            Line line2 = new Line(390, 555, new Point(580, 555), 2);
-            line = line2;
-            Invalidate();
-            Point p1 = new Point(357, 535);
-            Point p2 = new Point(372, 539);
-            pbSpark.Location = p1;
-            pbSpark2.Location = p2;
-           
+                Line line2 = new Line(390, 555, new Point(580, 555), 2);
+                line = line2;
+                Invalidate();
+                Point p1 = new Point(357, 535);
+                Point p2 = new Point(372, 539);
+                pbSpark.Location = p1;
+                pbSpark2.Location = p2;
             
             lblCorrect.Text = "0";
             ShowImages();
@@ -160,6 +209,7 @@ namespace SpotTheDifference
                 if (line.X < 560)
                 {
                     line.X ++;
+
                     if (pbSpark.Visible)
                     {
                         pbSpark.Hide(); pbSpark2.Show();
@@ -206,11 +256,6 @@ namespace SpotTheDifference
         {
             timer.Dispose();
             timer.Stop();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

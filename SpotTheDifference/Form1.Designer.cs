@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lbChoose = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.pbNature = new System.Windows.Forms.PictureBox();
             this.pbSkopje = new System.Windows.Forms.PictureBox();
             this.pbFinki = new System.Windows.Forms.PictureBox();
             this.pbAnimals = new System.Windows.Forms.PictureBox();
+            this.btnInstr = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbNature)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSkopje)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFinki)).BeginInit();
@@ -57,9 +59,9 @@
             this.btnCancel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnCancel.Location = new System.Drawing.Point(331, 335);
+            this.btnCancel.Location = new System.Drawing.Point(315, 335);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(94, 31);
+            this.btnCancel.Size = new System.Drawing.Size(123, 31);
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Exit";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -109,17 +111,32 @@
             this.pbAnimals.TabStop = false;
             this.pbAnimals.Click += new System.EventHandler(this.pbAnimals_Click);
             // 
+            // btnInstr
+            // 
+            this.btnInstr.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnInstr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInstr.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnInstr.Location = new System.Drawing.Point(12, 335);
+            this.btnInstr.Name = "btnInstr";
+            this.btnInstr.Size = new System.Drawing.Size(123, 31);
+            this.btnInstr.TabIndex = 7;
+            this.btnInstr.Text = "Instructions";
+            this.btnInstr.UseVisualStyleBackColor = false;
+            this.btnInstr.Click += new System.EventHandler(this.btnInstr_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(450, 378);
+            this.Controls.Add(this.btnInstr);
             this.Controls.Add(this.pbAnimals);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lbChoose);
             this.Controls.Add(this.pbNature);
             this.Controls.Add(this.pbSkopje);
             this.Controls.Add(this.pbFinki);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Spot the difference";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
@@ -140,6 +157,7 @@
         private System.Windows.Forms.Label lbChoose;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.PictureBox pbAnimals;
+        private System.Windows.Forms.Button btnInstr;
     }
 }
 

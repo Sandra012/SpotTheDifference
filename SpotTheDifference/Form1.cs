@@ -25,9 +25,7 @@ namespace SpotTheDifference
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.Clear(Color.Black);
-           
         }
-
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -45,6 +43,7 @@ namespace SpotTheDifference
             category = new Category("animals");
             form2 = new Form2(this);
             form2.Show();
+          
         }
 
         private void pbFinki_Click(object sender, EventArgs e)
@@ -55,19 +54,24 @@ namespace SpotTheDifference
         }
 
         private void pbNature_Click(object sender, EventArgs e)
-        {
-            
+        {   
             category = new Category("nature");
             form2 = new Form2(this);
             form2.Show();
         }
 
         private void pbSkopje_Click(object sender, EventArgs e)
-        {
-            
+        {            
             category = new Category("skopje");
             form2 = new Form2(this);
             form2.Show();
+            
+        }
+        
+        private void btnInstr_Click(object sender, EventArgs e)
+        {
+            
+            MessageBox.Show("Instructions: /n Point and click on the differences between two pictures as fast as you can. /n Remember! Each wrong click will reduce the time left.");
         }
     }
 }
