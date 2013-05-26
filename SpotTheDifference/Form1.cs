@@ -73,5 +73,6 @@ namespace SpotTheDifference
             
             MessageBox.Show("Instructions: /n Point and click on the differences between two pictures as fast as you can. /n Remember! Each wrong click will reduce the time left.");
         }
+        //This is an old version of this file..
     }
 }
