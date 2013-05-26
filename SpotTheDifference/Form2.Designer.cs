@@ -31,29 +31,27 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.Find5Dif = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblFive = new System.Windows.Forms.Label();
             this.lblCorrect = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btnNextImg = new System.Windows.Forms.Button();
             this.btnChangeCategory = new System.Windows.Forms.Button();
+            this.pbLeft = new System.Windows.Forms.PictureBox();
+            this.pbRight = new System.Windows.Forms.PictureBox();
             this.pbSpark2 = new System.Windows.Forms.PictureBox();
             this.pbSpark = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gbScore = new System.Windows.Forms.GroupBox();
-            this.pbCursor = new System.Windows.Forms.PictureBox();
-            this.pbRight = new System.Windows.Forms.PictureBox();
-            this.pbLeft = new System.Windows.Forms.PictureBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLeft)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSpark2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSpark)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.gbScore.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCursor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLeft)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Find5Dif
@@ -63,24 +61,24 @@
             this.Find5Dif.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Find5Dif.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Find5Dif.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Find5Dif.Location = new System.Drawing.Point(135, 536);
+            this.Find5Dif.Location = new System.Drawing.Point(51, 540);
             this.Find5Dif.Name = "Find5Dif";
             this.Find5Dif.Size = new System.Drawing.Size(156, 22);
             this.Find5Dif.TabIndex = 2;
             this.Find5Dif.Text = "Find 5 differences";
             // 
-            // button1
+            // btnExit
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Location = new System.Drawing.Point(940, 547);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 29);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnExit.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnExit.Location = new System.Drawing.Point(940, 547);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(100, 29);
+            this.btnExit.TabIndex = 4;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // timer1
             // 
@@ -91,19 +89,18 @@
             this.lblFive.AutoSize = true;
             this.lblFive.BackColor = System.Drawing.Color.White;
             this.lblFive.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFive.Location = new System.Drawing.Point(29, 16);
+            this.lblFive.Location = new System.Drawing.Point(30, 6);
             this.lblFive.Name = "lblFive";
             this.lblFive.Size = new System.Drawing.Size(39, 26);
             this.lblFive.TabIndex = 9;
             this.lblFive.Text = "/ 5";
-            this.lblFive.Click += new System.EventHandler(this.lblFive_Click);
             // 
             // lblCorrect
             // 
             this.lblCorrect.AutoSize = true;
             this.lblCorrect.BackColor = System.Drawing.Color.White;
             this.lblCorrect.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorrect.Location = new System.Drawing.Point(7, 16);
+            this.lblCorrect.Location = new System.Drawing.Point(9, 6);
             this.lblCorrect.Name = "lblCorrect";
             this.lblCorrect.Size = new System.Drawing.Size(25, 26);
             this.lblCorrect.TabIndex = 10;
@@ -127,9 +124,9 @@
             this.btnNextImg.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNextImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNextImg.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnNextImg.Location = new System.Drawing.Point(709, 547);
+            this.btnNextImg.Location = new System.Drawing.Point(719, 547);
             this.btnNextImg.Name = "btnNextImg";
-            this.btnNextImg.Size = new System.Drawing.Size(119, 64);
+            this.btnNextImg.Size = new System.Drawing.Size(107, 64);
             this.btnNextImg.TabIndex = 12;
             this.btnNextImg.Text = "Next image";
             this.btnNextImg.UseVisualStyleBackColor = false;
@@ -147,6 +144,27 @@
             this.btnChangeCategory.Text = "Change Category";
             this.btnChangeCategory.UseVisualStyleBackColor = false;
             this.btnChangeCategory.Click += new System.EventHandler(this.btnChangeCategory_Click);
+            // 
+            // pbLeft
+            // 
+            this.pbLeft.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbLeft.Location = new System.Drawing.Point(24, 13);
+            this.pbLeft.Name = "pbLeft";
+            this.pbLeft.Size = new System.Drawing.Size(500, 500);
+            this.pbLeft.TabIndex = 0;
+            this.pbLeft.TabStop = false;
+            this.pbLeft.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pbLeft_MouseClick);
+            // 
+            // pbRight
+            // 
+            this.pbRight.BackColor = System.Drawing.Color.Transparent;
+            this.pbRight.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbRight.Location = new System.Drawing.Point(530, 13);
+            this.pbRight.Name = "pbRight";
+            this.pbRight.Size = new System.Drawing.Size(500, 500);
+            this.pbRight.TabIndex = 1;
+            this.pbRight.TabStop = false;
+            this.pbRight.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pbRight_MouseClick);
             // 
             // pbSpark2
             // 
@@ -181,95 +199,57 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // gbScore
+            // panel1
             // 
-            this.gbScore.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.gbScore.Controls.Add(this.lblFive);
-            this.gbScore.Controls.Add(this.lblCorrect);
-            this.gbScore.Location = new System.Drawing.Point(176, 558);
-            this.gbScore.Name = "gbScore";
-            this.gbScore.Size = new System.Drawing.Size(75, 49);
-            this.gbScore.TabIndex = 16;
-            this.gbScore.TabStop = false;
+            this.panel1.BackColor = System.Drawing.SystemColors.WindowText;
+            this.panel1.Controls.Add(this.lblFive);
+            this.panel1.Controls.Add(this.lblCorrect);
+            this.panel1.Location = new System.Drawing.Point(82, 565);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(78, 39);
+            this.panel1.TabIndex = 18;
             // 
-            // pbCursor
+            // panel2
             // 
-            this.pbCursor.BackColor = System.Drawing.Color.Transparent;
-            this.pbCursor.Image = ((System.Drawing.Image)(resources.GetObject("pbCursor.Image")));
-            this.pbCursor.InitialImage = null;
-            this.pbCursor.Location = new System.Drawing.Point(695, 63);
-            this.pbCursor.Name = "pbCursor";
-            this.pbCursor.Size = new System.Drawing.Size(20, 24);
-            this.pbCursor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbCursor.TabIndex = 5;
-            this.pbCursor.TabStop = false;
-            this.pbCursor.Visible = false;
-            // 
-            // pbRight
-            // 
-            this.pbRight.BackColor = System.Drawing.Color.Transparent;
-            this.pbRight.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbRight.Location = new System.Drawing.Point(537, 19);
-            this.pbRight.Name = "pbRight";
-            this.pbRight.Size = new System.Drawing.Size(500, 500);
-            this.pbRight.TabIndex = 1;
-            this.pbRight.TabStop = false;
-            this.pbRight.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pbRight_MouseClick);
-            // 
-            // pbLeft
-            // 
-            this.pbLeft.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbLeft.Location = new System.Drawing.Point(19, 19);
-            this.pbLeft.Name = "pbLeft";
-            this.pbLeft.Size = new System.Drawing.Size(500, 500);
-            this.pbLeft.TabIndex = 0;
-            this.pbLeft.TabStop = false;
-            this.pbLeft.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pbLeft_MouseClick);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox1.Controls.Add(this.pbLeft);
-            this.groupBox1.Controls.Add(this.pbRight);
-            this.groupBox1.Controls.Add(this.pbCursor);
-            this.groupBox1.Location = new System.Drawing.Point(12, -1);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1055, 534);
-            this.groupBox1.TabIndex = 17;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Controls.Add(this.pbLeft);
+            this.panel2.Controls.Add(this.pbRight);
+            this.panel2.Location = new System.Drawing.Point(12, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1055, 524);
+            this.panel2.TabIndex = 19;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1079, 626);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.gbScore);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pbSpark2);
             this.Controls.Add(this.pbSpark);
             this.Controls.Add(this.btnChangeCategory);
             this.Controls.Add(this.btnNextImg);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.Find5Dif);
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Location = new System.Drawing.Point(10, 10);
             this.Name = "Form2";
             this.Text = "Spot the difference";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Load += new System.EventHandler(this.Form2_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form2_Paint);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLeft)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSpark2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSpark)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.gbScore.ResumeLayout(false);
-            this.gbScore.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCursor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLeft)).EndInit();
-            this.groupBox1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,7 +258,7 @@
         #endregion
 
         private System.Windows.Forms.Label Find5Dif;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblFive;
@@ -288,10 +268,9 @@
         private System.Windows.Forms.Button btnChangeCategory;
         private System.Windows.Forms.PictureBox pbSpark;
         private System.Windows.Forms.PictureBox pbSpark2;
-        private System.Windows.Forms.GroupBox gbScore;
-        private System.Windows.Forms.PictureBox pbCursor;
         private System.Windows.Forms.PictureBox pbRight;
         private System.Windows.Forms.PictureBox pbLeft;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

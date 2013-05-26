@@ -44,9 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ball.cs" />
     <Compile Include="Category.cs" />
-    <Compile Include="CustomCursor.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -316,6 +314,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cursor2.cur" />
+    <None Include="Resources\skopje2.jpg" />
+    <None Include="Resources\nature2.jpg" />
+    <None Include="Resources\finki2.jpg" />
+    <None Include="Resources\animals2.jpg" />
     <None Include="Resources\spark_trans21.gif" />
     <None Include="Resources\bomb2-2.gif" />
     <None Include="Resources\spark_trans2.gif" />

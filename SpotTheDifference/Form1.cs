@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -89,6 +89,5 @@ namespace SpotTheDifference
             form2 = new Form2(this);
             form2.Show();
         }
-		// da vidime dali ke mi dade deka treba da se komitira...
     }
 }

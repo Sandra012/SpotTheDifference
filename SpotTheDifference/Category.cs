@@ -9,11 +9,11 @@ namespace SpotTheDifference
     public class Category
     {
         public string Name { get; set; }
-        private int lastRandom;
+        private int lastRandom1, lastRandom2;
 
         public Category(String name) {
             this.Name = name;
-            lastRandom = -1;
+            lastRandom1 = lastRandom2 = -1;
         }
         
         public ImagePair getNewPair() {
@@ -22,9 +22,10 @@ namespace SpotTheDifference
             while (true)
             {
                 num = random.Next(5);
-                if (num != lastRandom)
+                if (num != lastRandom1 && num != lastRandom2)
                 {
-                    lastRandom = num;
+                    lastRandom2 = lastRandom1;
+                    lastRandom1 = num;
                     break;
                 }
             }

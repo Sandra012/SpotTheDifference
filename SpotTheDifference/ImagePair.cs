@@ -27,11 +27,6 @@ namespace SpotTheDifference
             }
         }
 
-        public ImagePair() {
-            left = right = null;
-            points = null;
-        }
-        
         public ImagePair(string categoryName, int num) {
             string imageName = categoryName + "_" + num.ToString();
             left = (Bitmap)ResourceManager.GetObject(imageName + "_1");
@@ -136,7 +131,7 @@ namespace SpotTheDifference
                     break;
                 case "finki_2":
                     points.Add(new Point(90,192));
-                    points.Add(new Point(195,342));
+                    points.Add(new Point(210,342));
                     points.Add(new Point(223,112));
                     points.Add(new Point(416,443));
                     points.Add(new Point(420,284));
@@ -188,7 +183,7 @@ namespace SpotTheDifference
                     points.Add(new Point(27,87));
                     points.Add(new Point(325,376));
                     points.Add(new Point(433,272));
-                    points.Add(new Point(213,402));
+                    points.Add(new Point(213,462));
                     break;
                 case "skopje_5":
                     points.Add(new Point(36,168));

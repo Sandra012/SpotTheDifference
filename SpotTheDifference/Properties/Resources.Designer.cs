@@ -233,6 +233,16 @@ namespace SpotTheDifference.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap animals2 {
+            get {
+                object obj = ResourceManager.GetObject("animals2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bomb2 {
             get {
                 object obj = ResourceManager.GetObject("bomb2", resourceCulture);
@@ -423,6 +433,16 @@ namespace SpotTheDifference.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap finki2 {
+            get {
+                object obj = ResourceManager.GetObject("finki2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hand_cursor {
             get {
                 object obj = ResourceManager.GetObject("hand_cursor", resourceCulture);
@@ -603,6 +623,16 @@ namespace SpotTheDifference.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nature2 {
+            get {
+                object obj = ResourceManager.GetObject("nature2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pesok {
             get {
                 object obj = ResourceManager.GetObject("pesok", resourceCulture);
@@ -776,6 +806,16 @@ namespace SpotTheDifference.Properties {
         internal static System.Drawing.Bitmap skopje_5_2 {
             get {
                 object obj = ResourceManager.GetObject("skopje_5_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap skopje2 {
+            get {
+                object obj = ResourceManager.GetObject("skopje2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

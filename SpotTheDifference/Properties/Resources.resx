@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="spark_trans21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spark_trans21.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="skopje_4_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\skopje_4_0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -217,8 +220,14 @@
   <data name="spark_trans" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spark_trans.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="finki2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finki2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="skopje_2_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\skopje_2_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finki_3_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finki_3_0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="nature_5_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nature_5_0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,6 +265,9 @@
   <data name="nature_1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nature_1_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="nature2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nature2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="animals_2_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\animals_2_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -286,9 +298,6 @@
   <data name="transparent_red_circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\transparent_red_circle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="finki_3_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\finki_3_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="spark_trans2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spark_trans2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -304,8 +313,8 @@
   <data name="nature_4_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nature_4_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="finki_3_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\finki_3_0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="finki_3_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finki_3_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="skopje_5_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\skopje_5_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -343,13 +352,16 @@
   <data name="skopje_1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\skopje_1_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="animals2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\animals2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="animals_1_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\animals_1_0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hand_cursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hand_cursor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="spark_trans21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\spark_trans21.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="skopje2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skopje2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
